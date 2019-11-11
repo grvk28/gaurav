@@ -28,9 +28,9 @@
 		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 		<beans:property name="driverClassName" value="com.mysql.jdbc.Driver" />
 		<beans:property name="url"
-			value="jdbc:mysql://localhost:3306/gaurav?useSSL=false" />
-		<beans:property name="username" value="root" />
-		<beans:property name="password" value="123" />
+			value="jdbc:mysql://remotemysql.com:3306/iPcBjwPc8u?useSSL=false" />
+		<beans:property name="username" value="iPcBjwPc8u" />
+		<beans:property name="password" value="EUE1YyonCF" />
 	</beans:bean>
 
  <beans:bean id="customSuccessHandler" class="com.gaurav.CustomHandler"/>
