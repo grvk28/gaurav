@@ -1,0 +1,33 @@
+<beans xmlns="http://www.springframework.org/schema/beans" 
+ xmlns:mvc="http://www.springframework.org/schema/mvc"
+xmlns:context="http://www.springframework.org/schema/context" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation=" http://www.springframework.org/schema/beans  http://www.springframework.org/schema/beans/spring-beans-3.0.xsd http://www.springframework.org/schema/context  http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+    <context:component-scan base-package="com.gaurav" />
+    <context:annotation-config />
+   
+    <bean id="userdao" class="com.gaurav.dao.UserdaoImpl" />
+    <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+        <property name="dataSource" ref="dataSource" />
+    </bean>
+    <bean id="itemdao" class="com.gaurav.dao.ItemdaoImpl"></bean>
+    <bean id="categorydao" class="com.gaurav.dao.CategorydaoImpl"></bean>
+    <bean id="itemsdao" class="com.gaurav.dao.ItemsdaoImpl"></bean>
+    <bean id="admindao" class="com.gaurav.dao.AdmindaoImpl"></bean>
+    <bean id="cartdao" class="com.gaurav.dao.CartdaoImpl"></bean>
+    <bean id="locationdao" class="com.gaurav.dao.LocationdaoImpl"></bean>
+    <bean id="r_typedao" class="com.gaurav.dao.R_typedaoImpl"></bean>
+    <bean id="Billdao" class="com.gaurav.dao.BilldaoImpl"></bean>
+    <bean id="stockdao" class="com.gaurav.dao.StockdaoImpl"></bean>
+    <bean id="Employeedao" class="com.gaurav.dao.EmployeedaoImpl"></bean>
+     <bean
+    class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+    <property name="prefix">
+        <value>/WEB-INF/views/</value>
+    </property>
+    <property name="suffix">
+        <value>.jsp</value>
+    </property>
+    </bean>
+ 
+</beans>

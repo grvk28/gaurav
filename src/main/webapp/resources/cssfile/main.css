@@ -1,0 +1,17 @@
+body{
+	font-family:'Arial',sans-serif;
+	background-color:#f3f3f3;
+}
+#wrapper{
+	max-width:960px;
+	margin:0 auto;
+	background-color:#fff;
+	padding:32px;
+}
+
+header{
+	background-color:#59d5d8;
+	height:150px;
+	padding:4px;
+}
+
