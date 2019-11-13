@@ -200,7 +200,7 @@ public class LocationController {
 		return "jingle2";
 	}
 	
-	@RequestMapping(value="/booked/{catcid}",method=RequestMethod.POST)
+	@RequestMapping(value="booked/{catcid}",method=RequestMethod.POST)
 	public String registerProcess(@Valid @ModelAttribute("Customer") Customer customer, BindingResult result,Model model,Principal principal,@PathVariable(value="catcid") int cid) {
 		if(result.hasErrors()) {
 			return "jingle2";
